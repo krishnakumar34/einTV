@@ -42,7 +42,7 @@ async function stream(einthusan_id) {
         description: 'einthusan',
         url: info.url,
     };
-	//console.log(streams)
+	console.log(streams)
     return streams;
 
 }
