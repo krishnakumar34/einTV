@@ -32,7 +32,7 @@ async function request(url, data) {
 
 async function stream(einthusan_id) {
     var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
-    console.log("fullurl",fullUrl);
+    console.log("fullurl",fullUrl)
     var id = einthusan_id.split(":")[1];
     let url = `${baseURL}/movie/watch/${id}/`;
     let info = await youtubedl(url, {
@@ -50,8 +50,6 @@ async function stream(einthusan_id) {
 }
 
 async function meta(einthusan_id) {
-    var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
-    console.log("fullurl",fullUrl);
     var id = einthusan_id.split(":")[1];
 
     var url = `${baseURL}/movie/watch/${id}/`;
