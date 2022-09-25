@@ -3,7 +3,7 @@ const {
     parse
 } = require("fast-html-parser");
 var URLSafeBase64 = require('urlsafe-base64');
-const baseURL = "https://einthusan.tv";
+const baseURL = "https://cors2-now.onrender.com/https://einthusan.tv";
 const youtubedl = require("youtube-dl-exec");
 
 const {
