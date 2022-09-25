@@ -14,7 +14,7 @@ default:
 
 async function request(url, data) {
 
-    //console.log(url,'url');
+    console.log(url,'url');
     return await axios
     .get(url)
     .then(res => {
@@ -41,9 +41,9 @@ async function stream(einthusan_id) {
     let streams = {
         name: 'einthusan',
         description: 'einthusan',
-        url: proxy/info.url,
+        url: info.url,
     };
-	console.log('streams m3u',proxy/info.url)
+	console.log('streams m3u',info.url)
     return streams;
 
 }
