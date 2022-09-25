@@ -49,7 +49,8 @@ async function stream(einthusan_id) {
 }
 
 async function meta(einthusan_id) {
-
+    var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
+    console.log("fullurl",fullUrl);
     var id = einthusan_id.split(":")[1];
 
     var url = `${baseURL}/movie/watch/${id}/`;
