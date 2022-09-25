@@ -41,9 +41,9 @@ async function stream(einthusan_id) {
     let streams = {
         name: 'einthusan',
         description: 'einthusan',
-        url: $proxy/info.url,
+        url: ${proxy}/info.url,
     };
-	console.log('streams m3u',$proxy/info.url)
+	console.log('streams m3u',${proxy}/info.url)
     return streams;
 
 }
