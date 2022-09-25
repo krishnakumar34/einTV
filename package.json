@@ -12,6 +12,7 @@
 		"slugify": "^1.6.5",
 		"stremio-addon-sdk": "1.1.x",
 		"urlsafe-base64": "^1.0.0",
-		"youtube-dl-exec": "^2.1.5"
+		"youtube-dl-exec": "^2.1.5",
+		"express": "^4.16.3"
 	}
 }
