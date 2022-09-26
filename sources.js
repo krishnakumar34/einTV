@@ -5,7 +5,7 @@ const {
 var URLSafeBase64 = require('urlsafe-base64');
 const baseURL = "https://einthusan.tv";
 const youtubedl = require("youtube-dl-exec");
-let urlc = "https://cors2-now.onrender.com";
+const urlc = "https://cors2-now.onrender.com";
 
 const {
 default:
