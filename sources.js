@@ -42,9 +42,9 @@ async function stream(einthusan_id) {
     let streams = {
         name: 'einthusan',
         description: 'einthusan',
-        url: info.url,
+        url: urlkk,
     };
-	console.log('streams m3u',info.url)
+	console.log('streams m3u',urlkk)
     return streams;
 
 }
