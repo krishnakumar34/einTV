@@ -36,14 +36,13 @@ async function stream(einthusan_id) {
     let info = await youtubedl(url, {
         dumpSingleJson: true
     });
-    console.log("info",${info.url})
-    let urlkk = '${urlc}/${info.url}';
+    
     let streams = {
         name: 'einthusan',
         description: 'einthusan',
-        url: urlkk,
+        url: info.url,
     };
-	console.log('streams m3u',urlkk)
+	console.log('streams m3u',info.url)
     return streams;
 
 }
