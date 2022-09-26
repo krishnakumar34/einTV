@@ -37,13 +37,13 @@ async function stream(einthusan_id) {
         dumpSingleJson: true
     });
     var urlk = '${urlc}/${info.url}';
-    console.log('streams m3ukkkurl',${urlk})
+    console.log('streams m3ukkkurl',urlk)
     let streams = {
         name: 'einthusan',
         description: 'einthusan',
         url: ${urlk},
     };
-	console.log('streams m3u',${urlk})
+	console.log('streams m3u',urlk)
     return streams;
 
 }
