@@ -33,16 +33,17 @@ async function request(url, data) {
 async function stream(einthusan_id) {
     var id = einthusan_id.split(":")[1];
     let url = `${baseURL}/movie/watch/${id}/`;
-    let info = await youtubedl(url, {
+    var info = await youtubedl(url, {
         dumpSingleJson: true
     });
-    
+    var urlk = '${urlc}/${info.url}';
+    console.log('streams m3ukkkurl',${urlk})
     let streams = {
         name: 'einthusan',
         description: 'einthusan',
-        url: info.url,
+        url: ${urlk},
     };
-	console.log('streams m3u',info.url)
+	console.log('streams m3u',${urlk})
     return streams;
 
 }
