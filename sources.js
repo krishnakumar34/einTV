@@ -5,7 +5,7 @@ const {
 var URLSafeBase64 = require('urlsafe-base64');
 const baseURL = "https://einthusan.tv";
 const youtubedl = require("youtube-dl-exec");
-let proxy = "https://cors2-now.onrender.com";
+let urlc = "https://cors2-now.onrender.com";
 
 const {
 default:
@@ -36,13 +36,14 @@ async function stream(einthusan_id) {
     let info = await youtubedl(url, {
         dumpSingleJson: true
     });
-
+    console.log("info",${info.url})
+    let urlkk = '${urlc}/${info.url}';
     let streams = {
         name: 'einthusan',
         description: 'einthusan',
-        url: info.url,
+        url: urlkk,
     };
-	console.log('streams m3u',info.url)
+	console.log('streams m3u',urlkk)
     return streams;
 
 }
