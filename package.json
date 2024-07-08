@@ -5,6 +5,9 @@
 	"scripts": {
 		"start": "node server.js"
 	},
+	"engines" : { 
+         "node" : "14.17.0"
+	},
 	"dependencies": {
 		"axios": "^0.27.2",
 		"fast-html-parser": "^1.0.1",
