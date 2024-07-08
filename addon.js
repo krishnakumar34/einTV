@@ -22,6 +22,7 @@ builder.defineStreamHandler((args) => {
 
 builder.defineCatalogHandler((args) => {
 	console.log("addon.js Catalog:", args);
+	console.log("catalog extra search:", args.extra.search);
 	  if (args.extra.search) {
 		  //return Promise(mycima(args.type, slug));
     return Promise.resolve(sources.search(args.id, args.extra.search))
